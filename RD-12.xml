@@ -1,5 +1,6 @@
- <?xml version="1.0" encoding="UTF-8"?>
- <manifest>
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+ 
      <!-- remote source -->
      <remote name="XD" fetch="https://github.com/XscarGOD" />
      <remote name="XT" fetch="https://gitlab.com/XscarGOD" />
