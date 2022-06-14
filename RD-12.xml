@@ -2,7 +2,7 @@
  <manifest>
      <!-- remote source -->
      <remote name="XD" fetch="https://github.com/XscarGOD" />
-     <remote name="TheMuppets" fetch="https://github.com/TheMuppets" />
+     <remote name="XT" fetch="https://gitlab.com/XscarGOD" />
 
      <!-- Device Tree -->
      <project name="device_xiaomi_mojito"        path="device/xiaomi/mojito"        remote="XD"  revision="lineage-19.1" />
@@ -10,6 +10,6 @@
      <project name="kernel_xiaomi_mojito"        path="kernel/xiaomi/mojito"        remote="XD"  revision="lineage-19.1" clone-depth="1" />
  
      <!-- ANX -->
-     <project name="vendor_xiaomi_miuicamera"    path="vendor/xiaomi/miuicamera"    remote="XD"  revision="lineage-19.1" clone-depth="1" />
+     <project name="vendor_xiaomi_miuicamera"    path="vendor/xiaomi/miuicamera"    remote="XT"  revision="main" clone-depth="1" />
 
  </manifest> 
