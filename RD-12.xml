@@ -14,7 +14,7 @@
       <remote name="nhk"
               fetch="https://github.com/" />
    
-      <remove-project name="vendor/lineage" />
+      <remove-project name="RiceDroid/android_vendor_rice" />
  
 
      <!-- Device Tree -->
@@ -26,7 +26,6 @@
      
      <!-- Extras -->
      <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="AR" revision="arrow-12.1" />
-     <project path="hardware/qcom-caf/bootctrl" name="LineageOS/android_hardware_qcom_bootctrl" remote="nhk" revision="lineage-19.1-caf" />
      <project path="packages/apps/KProfiles" name="CannedShroud/android_packages_apps_KProfiles" remote="nhk" revision="main" />
      <project path="vendor/lineage" name="android_vendor_rice" remote="XD" revision="twelve" />
                                           
