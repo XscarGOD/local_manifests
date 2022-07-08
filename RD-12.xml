@@ -2,18 +2,28 @@
 <manifest>
  
      <!-- remote source -->
-     <remote name="XD" fetch="https://github.com/XscarGOD" />
-     <remote name="XT" fetch="https://gitlab.com/XscarGOD" />
+      <remote name="XD" 
+             fetch="https://github.com/XscarGOD" />
+      <remote name="pixel-devices-blobs"
+             fetch="https://gitlab.pixelexperience.org/android/vendor-blobs"
+             revision="twelve" />
+      <remote name="AR" 
+             fetch="https://github.com/ArrowOS-Devices" />
+      <remote name="NK" 
+             fetch="https://github.com/Neternels" />
+      <remote name="nhk"
+              fetch="https://github.com/" />
 
      <!-- Device Tree -->
-     <project name="device_xiaomi_mojito"        path="device/xiaomi/mojito"        remote="XD"  revision="lineage-19.1" />
-     <project name="vendor_xiaomi_mojito"        path="vendor/xiaomi/mojito"        remote="XD"  revision="lineage-19.1" clone-depth="1" />
-     <project name="kernel_xiaomi_mojito"        path="kernel/xiaomi/mojito"        remote="XD"  revision="lineage-19.1" clone-depth="1" />
- 
-     <!-- ANX -->
-     <project name="vendor_xiaomi_miuicamera"    path="vendor/xiaomi/miuicamera"    remote="XT"  revision="main" clone-depth="1" />
+     <project name="device_xiaomi_mojito"        path="device/xiaomi/mojito"        remote="XD"  revision="erofs" />
+     <project name="device_xiaomi_sm6150-common" path="device/xiaomi/sm6150-common" remote="XD"  revision="erofs" />
+     <project name="vendor_xiaomi_mojito"        path="vendor/xiaomi/mojito"        remote="pixel-devices-blobs"  revision="twelve" clone-depth="1" />
+     <project name="vendor_xiaomi_sm6150-common" path="vendor/xiaomi/sm6150-common" remote="pixel-devices-blobs"  revision="twelve" clone-depth="1" />
+     <project name="android_kernel_xiaomi_mojito" path="kernel/xiaomi/mojito"       remote="NK"  revision="staging-test" clone-depth="1" />
      
      <!-- Extras -->
-     <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" />
+     <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="AR" revision="arrow-12.1" />
+     <project path="hardware/qcom-caf/bootctrl" name="LineageOS/android_hardware_qcom_bootctrl" remote="nhk" revision="lineage-19.1-caf" />
+     <project path="packages/apps/KProfiles" name="CannedShroud/android_packages_apps_KProfiles" remote="nhk" revision="main" />
   
  </manifest> 
